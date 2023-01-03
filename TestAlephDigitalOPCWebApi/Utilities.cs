@@ -97,7 +97,7 @@ namespace TestAlephDigitalOPCWebApi
 
                 node.AddFirst(new XElement("NodeClass", node.Name.LocalName));
 
-                var attributeNodeId = node.Attributes().FirstOrDefault(x => x.Name == "NodeId");
+                var attributeNodeId = node.Attributes().FirstOrDefault(x => x.Name == "NodeId"); 
                 if (attributeNodeId != null)
                     node.AddFirst(new XElement(attributeNodeId.Name.LocalName, attributeNodeId.Value));
 
