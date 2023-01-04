@@ -13,19 +13,5 @@ namespace TestAlephDigitalOPCWebApi.Models
         public string? DisplayName { get; set;}
 
         public string? Description { get; set; }
-
-        //public Node(string nodeId, string nodeClass, string browseName, string displayName, string description)
-        //{
-        //    NodeId= nodeId;
-        //    NodeClass= nodeClass;
-        //    BrowseName= browseName;
-        //    DisplayName= displayName;
-        //    Description= description;
-        //}
-
-        //public Node()
-        //{
-
-        //}
     }
 }

@@ -24,9 +24,6 @@ namespace TestAlephDigitalOPCWebApi.Controllers
             return xElement == null ? NotFound() : Content(xmlString, "text/xml", System.Text.Encoding.UTF8);
         }
 
-        //[HttpGet("query", NodeClass = "Filter by NodeClass")]
-
-
         [HttpGet("query")]
         // GET: Returns the full "node" in the native xml format. Application/item/{id}
         public ActionResult<string> GetAllNodeInJson()
@@ -34,8 +31,6 @@ namespace TestAlephDigitalOPCWebApi.Controllers
             Utilities.PrepareXmlMinInfo();
 
             string jsonString = Utilities.XmlToJson("Data/allNodesForJson.xml");
-
-            //List<Node> nodesObjects = Utilities.DeserializeFromXML();
 
             return jsonString;
         }

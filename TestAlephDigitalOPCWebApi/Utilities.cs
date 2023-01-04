@@ -66,7 +66,7 @@ namespace TestAlephDigitalOPCWebApi
 
         /// <summary>
         ///Method for removing all unnecessary stuff (models, comments, aliases, namespaces)
-        ///and lefts only nodes: UADataType, UAObject, UAVariable and UA Method
+        ///and lefts only nodes UADataType, UAObject, UAVariable and UA Method with minimal requested information
         /// </summary>
         public static void PrepareXmlMinInfo()
         {
@@ -74,6 +74,7 @@ namespace TestAlephDigitalOPCWebApi
 
             List<XElement> nodes = xmlElement.Elements().ToList();
 
+            //Removing Namespaces Uris, Models and Aliases
             nodes.RemoveAt(0);
             nodes.RemoveAt(0);
             nodes.RemoveAt(0);
@@ -113,54 +114,6 @@ namespace TestAlephDigitalOPCWebApi
                 );
 
             doc.Save("Data/allNodesForJson.xml");
-        }
-
-        //public static List<Node> XmlToList(string path)
-        //{
-        //    //XDocument xmlElement = XDocument.Load("Data/allNodesForJson.xml");
-
-        //    //var root = xmlElement.Root;
-
-        //    List<Node> nodesList = new List<Node>();
-
-        //    XElement xmlElement = XElement.Load("Data/allNodesForJson.xml");
-
-        //    List<XElement> nodesXElement = xmlElement.Elements().ToList();
-
-        //    foreach (var xElement in nodesXElement)
-        //    {
-        //        nodesXElement.Add(new Node { xElement.});
-        //    }
-        //}
-
-        public static List<Node> DeserializeFromXML()
-        {
-            //XElement xmlElement = XElement.Load("Data/allNodesForJson.xml");
-
-            //List<XElement> nodes = xmlElement.Elements().ToList();
-
-            //XNamespace xNamespace = "http://www.w3.org/2001/XMLSchema-instance";
-
-            //XDocument docWithNamespaces = new XDocument(
-            //    new XDeclaration("1.0", "utf-8", "yes"),
-            //    new XElement(xNamespace + "UANodeSet", 
-            //    nodes)
-            //    );
-            //docWithNamespaces.Save("Data/allNodesWithNamespacesForJson.xml");
-
-
-            string path = Path.Combine(Environment.CurrentDirectory, "allNodesWithNamespacesForJson.xml");
-
-            XmlSerializer deserializer = new XmlSerializer(typeof(List<Node>));
-
-            List<Node> nodes = new List<Node>();
-
-            using (FileStream stream = File.Open("Data/allNodesWithNamespacesForJson.xml", FileMode.Open))
-            {
-                nodes = (List<Node>)deserializer.Deserialize(stream);
-            }
-
-            return nodes;
         }
     }
 }
