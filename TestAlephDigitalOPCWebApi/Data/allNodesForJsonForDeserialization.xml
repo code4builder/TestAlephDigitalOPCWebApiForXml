@@ -1,2295 +1,2295 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Node xmlns="">
+<ArrayOfNode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Node>
     <NodeId>ns=1;i=15001</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:http://opcfoundation.org/UA/DI/</BrowseName>
     <DisplayName>http://opcfoundation.org/UA/DI/</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15002</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>NamespaceUri</BrowseName>
     <DisplayName>NamespaceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15003</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>NamespaceVersion</BrowseName>
     <DisplayName>NamespaceVersion</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15004</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>NamespacePublicationDate</BrowseName>
     <DisplayName>NamespacePublicationDate</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15005</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>IsNamespaceSubset</BrowseName>
     <DisplayName>IsNamespaceSubset</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15006</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StaticNodeIdTypes</BrowseName>
     <DisplayName>StaticNodeIdTypes</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15007</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StaticNumericNodeIdRange</BrowseName>
     <DisplayName>StaticNumericNodeIdRange</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15008</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StaticStringNodeIdPattern</BrowseName>
     <DisplayName>StaticStringNodeIdPattern</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15031</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>DefaultRolePermissions</BrowseName>
     <DisplayName>DefaultRolePermissions</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15032</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>DefaultUserRolePermissions</BrowseName>
     <DisplayName>DefaultUserRolePermissions</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15033</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>DefaultAccessRestrictions</BrowseName>
     <DisplayName>DefaultAccessRestrictions</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6030</NodeId>
     <NodeClass>UAReferenceType</NodeClass>
     <BrowseName>1:ConnectsTo</BrowseName>
     <DisplayName>ConnectsTo</DisplayName>
     <Description>Used to indicate that source and target Node have a topological connection.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6467</NodeId>
     <NodeClass>UAReferenceType</NodeClass>
     <BrowseName>1:ConnectsToParent</BrowseName>
     <DisplayName>ConnectsToParent</DisplayName>
     <Description>Defines the parent (i.e. the communication Device) of a Network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6031</NodeId>
     <NodeClass>UAReferenceType</NodeClass>
     <BrowseName>1:IsOnline</BrowseName>
     <DisplayName>IsOnline</DisplayName>
     <Description>Used to bind the offline representation of a Device to the online representation.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=5001</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceSet</BrowseName>
     <DisplayName>DeviceSet</DisplayName>
     <Description>Contains all instances of devices</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15034</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceFeatures</BrowseName>
     <DisplayName>DeviceFeatures</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6078</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NetworkSet</BrowseName>
     <DisplayName>NetworkSet</DisplayName>
     <Description>Contains all instances of communication networks</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6094</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceTopology</BrowseName>
     <DisplayName>DeviceTopology</DisplayName>
     <Description>Starting point of the configured device topology.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6095</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:OnlineAccess</BrowseName>
     <DisplayName>OnlineAccess</DisplayName>
     <Description>Hint of whether the Server is currently able to communicate to Devices in the topology.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1001</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:TopologyElementType</BrowseName>
     <DisplayName>TopologyElementType</DisplayName>
     <Description>Defines the basic information components for all configurable elements in a device topology</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=5002</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ParameterSet</BrowseName>
     <DisplayName>ParameterSet</DisplayName>
     <Description>Flat list of Parameters</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6017</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ParameterIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ParameterIdentifier&gt;</DisplayName>
     <Description>A parameter which belongs to the topology element.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=5003</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:MethodSet</BrowseName>
     <DisplayName>MethodSet</DisplayName>
     <Description>Flat list of Methods</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6567</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;GroupIdentifier&gt;</BrowseName>
     <DisplayName>&lt;GroupIdentifier&gt;</DisplayName>
     <Description>An application specific functional group used to organize parameters and methods.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6014</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Identification</BrowseName>
     <DisplayName>Identification</DisplayName>
     <Description>Used to organize parameters for identification of this TopologyElement</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6161</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Lock</BrowseName>
     <DisplayName>Lock</DisplayName>
     <Description>Used to lock the topology element.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6468</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Locked</BrowseName>
     <DisplayName>Locked</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6163</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingClient</BrowseName>
     <DisplayName>LockingClient</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6164</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingUser</BrowseName>
     <DisplayName>LockingUser</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6165</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RemainingLockTime</BrowseName>
     <DisplayName>RemainingLockTime</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6166</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:InitLock</BrowseName>
     <DisplayName>InitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6167</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6168</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6169</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:RenewLock</BrowseName>
     <DisplayName>RenewLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6170</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6171</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:ExitLock</BrowseName>
     <DisplayName>ExitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6172</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6173</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:BreakLock</BrowseName>
     <DisplayName>BreakLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6174</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15035</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:IVendorNameplateType</BrowseName>
     <DisplayName>IVendorNameplateType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15036</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15037</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15038</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Model</BrowseName>
     <DisplayName>Model</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15039</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:HardwareRevision</BrowseName>
     <DisplayName>HardwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15040</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15041</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceRevision</BrowseName>
     <DisplayName>DeviceRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15042</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductCode</BrowseName>
     <DisplayName>ProductCode</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15043</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceManual</BrowseName>
     <DisplayName>DeviceManual</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15044</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceClass</BrowseName>
     <DisplayName>DeviceClass</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15045</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SerialNumber</BrowseName>
     <DisplayName>SerialNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15046</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductInstanceUri</BrowseName>
     <DisplayName>ProductInstanceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15047</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RevisionCounter</BrowseName>
     <DisplayName>RevisionCounter</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15048</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ITagNameplateType</BrowseName>
     <DisplayName>ITagNameplateType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15049</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:AssetId</BrowseName>
     <DisplayName>AssetId</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15050</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ComponentName</BrowseName>
     <DisplayName>ComponentName</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15051</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:IDeviceHealthType</BrowseName>
     <DisplayName>IDeviceHealthType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15052</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceHealth</BrowseName>
     <DisplayName>DeviceHealth</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15053</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceHealthAlarms</BrowseName>
     <DisplayName>DeviceHealthAlarms</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15054</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ISupportInfoType</BrowseName>
     <DisplayName>ISupportInfoType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15055</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceTypeImage</BrowseName>
     <DisplayName>DeviceTypeImage</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15056</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ImageIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ImageIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15057</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Documentation</BrowseName>
     <DisplayName>Documentation</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15058</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;DocumentIdentifier&gt;</BrowseName>
     <DisplayName>&lt;DocumentIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15059</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ProtocolSupport</BrowseName>
     <DisplayName>ProtocolSupport</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15060</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ProtocolSupportIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ProtocolSupportIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15061</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ImageSet</BrowseName>
     <DisplayName>ImageSet</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15062</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ImageIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ImageIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15063</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ComponentType</BrowseName>
     <DisplayName>ComponentType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15086</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15087</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15088</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Model</BrowseName>
     <DisplayName>Model</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15089</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:HardwareRevision</BrowseName>
     <DisplayName>HardwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15090</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15091</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceRevision</BrowseName>
     <DisplayName>DeviceRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15092</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductCode</BrowseName>
     <DisplayName>ProductCode</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15093</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceManual</BrowseName>
     <DisplayName>DeviceManual</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15094</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceClass</BrowseName>
     <DisplayName>DeviceClass</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15095</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SerialNumber</BrowseName>
     <DisplayName>SerialNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15096</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductInstanceUri</BrowseName>
     <DisplayName>ProductInstanceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15097</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RevisionCounter</BrowseName>
     <DisplayName>RevisionCounter</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15098</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:AssetId</BrowseName>
     <DisplayName>AssetId</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15099</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ComponentName</BrowseName>
     <DisplayName>ComponentName</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1002</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:DeviceType</BrowseName>
     <DisplayName>DeviceType</DisplayName>
     <Description>Defines the basic information components for all configurable elements in a device topology</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6003</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
     <Description>Name of the company that manufactured the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15100</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6004</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Model</BrowseName>
     <DisplayName>Model</DisplayName>
     <Description>Model name of the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6008</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:HardwareRevision</BrowseName>
     <DisplayName>HardwareRevision</DisplayName>
     <Description>Revision level of the hardware of the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6007</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
     <Description>Revision level of the software/firmware of the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6006</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceRevision</BrowseName>
     <DisplayName>DeviceRevision</DisplayName>
     <Description>Overall revision level of the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15101</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductCode</BrowseName>
     <DisplayName>ProductCode</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6005</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceManual</BrowseName>
     <DisplayName>DeviceManual</DisplayName>
     <Description>Address (pathname in the file system or a URL | Web address) of user manual for the device</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6470</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceClass</BrowseName>
     <DisplayName>DeviceClass</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6001</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SerialNumber</BrowseName>
     <DisplayName>SerialNumber</DisplayName>
     <Description>Identifier that uniquely identifies, within a manufacturer, a device instance</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15102</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ProductInstanceUri</BrowseName>
     <DisplayName>ProductInstanceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6002</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RevisionCounter</BrowseName>
     <DisplayName>RevisionCounter</DisplayName>
     <Description>An incremental counter indicating the number of times the static data within the Device has been modified</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6571</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;CPIdentifier&gt;</BrowseName>
     <DisplayName>&lt;CPIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6592</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NetworkAddress</BrowseName>
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6208</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:DeviceHealth</BrowseName>
     <DisplayName>DeviceHealth</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15105</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceHealthAlarms</BrowseName>
     <DisplayName>DeviceHealthAlarms</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6209</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:DeviceTypeImage</BrowseName>
     <DisplayName>DeviceTypeImage</DisplayName>
     <Description>Organizes pictures of the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6210</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ImageIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ImageIdentifier&gt;</DisplayName>
     <Description>An image of the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6211</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Documentation</BrowseName>
     <DisplayName>Documentation</DisplayName>
     <Description>Organizes documents for the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6212</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;DocumentIdentifier&gt;</BrowseName>
     <DisplayName>&lt;DocumentIdentifier&gt;</DisplayName>
     <Description>A document for the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6213</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ProtocolSupport</BrowseName>
     <DisplayName>ProtocolSupport</DisplayName>
     <Description>Protocol-specific files for the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6214</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ProtocolSupportIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ProtocolSupportIdentifier&gt;</DisplayName>
     <Description>A protocol-specific file for the device.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6215</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ImageSet</BrowseName>
     <DisplayName>ImageSet</DisplayName>
     <Description>Organizes images that are used within UIElements.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6216</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:&lt;ImageIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ImageIdentifier&gt;</DisplayName>
     <Description>An image for a UIElement.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15106</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:SoftwareType</BrowseName>
     <DisplayName>SoftwareType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15129</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15131</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Model</BrowseName>
     <DisplayName>Model</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15133</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1003</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:BlockType</BrowseName>
     <DisplayName>BlockType</DisplayName>
     <Description>Adds the concept of Blocks needed for block-oriented FieldDevices</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6009</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RevisionCounter</BrowseName>
     <DisplayName>RevisionCounter</DisplayName>
     <Description>Incremental counter indicating the number of times the static data within the Block has been modified</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6010</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ActualMode</BrowseName>
     <DisplayName>ActualMode</DisplayName>
     <Description>Current mode of operation the Block is able to achieve</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6011</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:PermittedMode</BrowseName>
     <DisplayName>PermittedMode</DisplayName>
     <Description>Modes of operation that are allowed for the Block based on application requirements</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6012</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:NormalMode</BrowseName>
     <DisplayName>NormalMode</DisplayName>
     <Description>Mode the Block should be set to during normal operating conditions</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6013</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:TargetMode</BrowseName>
     <DisplayName>TargetMode</DisplayName>
     <Description>Mode of operation that is desired for the Block</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15143</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:DeviceHealthDiagnosticAlarmType</BrowseName>
     <DisplayName>DeviceHealthDiagnosticAlarmType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15292</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:FailureAlarmType</BrowseName>
     <DisplayName>FailureAlarmType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15441</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:CheckFunctionAlarmType</BrowseName>
     <DisplayName>CheckFunctionAlarmType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15590</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:OffSpecAlarmType</BrowseName>
     <DisplayName>OffSpecAlarmType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15739</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:MaintenanceRequiredAlarmType</BrowseName>
     <DisplayName>MaintenanceRequiredAlarmType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1004</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ConfigurableObjectType</BrowseName>
     <DisplayName>ConfigurableObjectType</DisplayName>
     <Description>Defines a general pattern to expose and configure modular components</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=5004</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:SupportedTypes</BrowseName>
     <DisplayName>SupportedTypes</DisplayName>
     <Description>Folder maintaining the set of (sub-types of) BaseObjectTypes that can be instantiated in the ConfigurableComponent</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6026</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;ObjectIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ObjectIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1005</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:FunctionalGroupType</BrowseName>
     <DisplayName>FunctionalGroupType</DisplayName>
     <Description>FolderType is used to organize the Parameters and Methods from the complete set (ParameterSet, MethodSet) with regard to their application</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6027</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;GroupIdentifier&gt;</BrowseName>
     <DisplayName>&lt;GroupIdentifier&gt;</DisplayName>
     <Description>An application specific functional group used to organize parameters and methods.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6242</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:UIElement</BrowseName>
     <DisplayName>UIElement</DisplayName>
     <Description>A user interface element assigned to this group.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6243</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:UIElement</BrowseName>
     <DisplayName>UIElement</DisplayName>
     <Description>A user interface element assigned to this group.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1006</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ProtocolType</BrowseName>
     <DisplayName>ProtocolType</DisplayName>
     <Description>General structure of a Protocol ObjectType</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6244</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:DeviceHealthEnumeration</BrowseName>
     <DisplayName>DeviceHealthEnumeration</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6450</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>EnumStrings</BrowseName>
     <DisplayName>EnumStrings</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6246</NodeId>
     <NodeClass>UAVariableType</NodeClass>
     <BrowseName>1:UIElementType</BrowseName>
     <DisplayName>UIElementType</DisplayName>
     <Description>The base type for all UI Element Types.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6247</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:NetworkType</BrowseName>
     <DisplayName>NetworkType</DisplayName>
     <Description>Represents the communication means for Devices that are connected to it.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6596</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;ProfileIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ProfileIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6248</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;CPIdentifier&gt;</BrowseName>
     <DisplayName>&lt;CPIdentifier&gt;</DisplayName>
     <Description>The ConnectionPoint(s) that have been configured for this Network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6292</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NetworkAddress</BrowseName>
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6294</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Lock</BrowseName>
     <DisplayName>Lock</DisplayName>
     <Description>Used to lock the Network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6497</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Locked</BrowseName>
     <DisplayName>Locked</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6296</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingClient</BrowseName>
     <DisplayName>LockingClient</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6297</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingUser</BrowseName>
     <DisplayName>LockingUser</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6298</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RemainingLockTime</BrowseName>
     <DisplayName>RemainingLockTime</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6299</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:InitLock</BrowseName>
     <DisplayName>InitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6300</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6301</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6302</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:RenewLock</BrowseName>
     <DisplayName>RenewLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6303</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6304</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:ExitLock</BrowseName>
     <DisplayName>ExitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6305</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6306</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:BreakLock</BrowseName>
     <DisplayName>BreakLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6307</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6308</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ConnectionPointType</BrowseName>
     <DisplayName>ConnectionPointType</DisplayName>
     <Description>Represents the interface (interface card) of a Device to a Network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6354</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NetworkAddress</BrowseName>
     <DisplayName>NetworkAddress</DisplayName>
     <Description>The address of the device on this network.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6499</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;ProfileIdentifier&gt;</BrowseName>
     <DisplayName>&lt;ProfileIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6599</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:&lt;NetworkIdentifier&gt;</BrowseName>
     <DisplayName>&lt;NetworkIdentifier&gt;</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6522</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:FetchResultDataType</BrowseName>
     <DisplayName>FetchResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15888</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:TransferResultErrorDataType</BrowseName>
     <DisplayName>TransferResultErrorDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15889</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:TransferResultDataDataType</BrowseName>
     <DisplayName>TransferResultDataDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6525</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:ParameterResultDataType</BrowseName>
     <DisplayName>ParameterResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6526</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:TransferServicesType</BrowseName>
     <DisplayName>TransferServicesType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6527</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:TransferToDevice</BrowseName>
     <DisplayName>TransferToDevice</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6528</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6529</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:TransferFromDevice</BrowseName>
     <DisplayName>TransferFromDevice</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6530</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6531</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:FetchTransferResultData</BrowseName>
     <DisplayName>FetchTransferResultData</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6532</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6533</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6387</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:MaxInactiveLockTime</BrowseName>
     <DisplayName>MaxInactiveLockTime</DisplayName>
     <Description>Server-specific period of time in milliseconds until the Server will revoke a lock.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6388</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:LockingServicesType</BrowseName>
     <DisplayName>LockingServicesType</DisplayName>
     <Description>An interface for Locking.</Description>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15890</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>DefaultInstanceBrowseName</BrowseName>
     <DisplayName>DefaultInstanceBrowseName</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6534</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Locked</BrowseName>
     <DisplayName>Locked</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6390</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingClient</BrowseName>
     <DisplayName>LockingClient</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6391</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:LockingUser</BrowseName>
     <DisplayName>LockingUser</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6392</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:RemainingLockTime</BrowseName>
     <DisplayName>RemainingLockTime</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6393</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:InitLock</BrowseName>
     <DisplayName>InitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6394</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6395</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6396</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:RenewLock</BrowseName>
     <DisplayName>RenewLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6397</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6398</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:ExitLock</BrowseName>
     <DisplayName>ExitLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6399</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6400</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:BreakLock</BrowseName>
     <DisplayName>BreakLock</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6401</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=1</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:SoftwareUpdateType</BrowseName>
     <DisplayName>SoftwareUpdateType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=2</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Loading</BrowseName>
     <DisplayName>Loading</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=4</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PrepareForUpdate</BrowseName>
     <DisplayName>PrepareForUpdate</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=5</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>CurrentState</BrowseName>
     <DisplayName>CurrentState</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Id</BrowseName>
     <DisplayName>Id</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=19</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Prepare</BrowseName>
     <DisplayName>Prepare</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=20</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Abort</BrowseName>
     <DisplayName>Abort</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=40</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Installation</BrowseName>
     <DisplayName>Installation</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=41</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>CurrentState</BrowseName>
     <DisplayName>CurrentState</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=42</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Id</BrowseName>
     <DisplayName>Id</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=61</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Resume</BrowseName>
     <DisplayName>Resume</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=76</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PowerCycle</BrowseName>
     <DisplayName>PowerCycle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=77</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>CurrentState</BrowseName>
     <DisplayName>CurrentState</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=78</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Id</BrowseName>
     <DisplayName>Id</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=98</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Confirmation</BrowseName>
     <DisplayName>Confirmation</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=99</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>CurrentState</BrowseName>
     <DisplayName>CurrentState</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=100</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Id</BrowseName>
     <DisplayName>Id</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=112</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Confirm</BrowseName>
     <DisplayName>Confirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=113</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ConfirmationTimeout</BrowseName>
     <DisplayName>ConfirmationTimeout</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=122</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Parameters</BrowseName>
     <DisplayName>Parameters</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=123</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>ClientProcessingTimeout</BrowseName>
     <DisplayName>ClientProcessingTimeout</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=124</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>GenerateFileForRead</BrowseName>
     <DisplayName>GenerateFileForRead</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=125</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=126</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=127</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>GenerateFileForWrite</BrowseName>
     <DisplayName>GenerateFileForWrite</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=128</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=129</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=130</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>CloseAndCommit</BrowseName>
     <DisplayName>CloseAndCommit</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=131</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=132</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=133</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:UpdateStatus</BrowseName>
     <DisplayName>UpdateStatus</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=402</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:VendorErrorCode</BrowseName>
     <DisplayName>VendorErrorCode</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=134</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>DefaultInstanceBrowseName</BrowseName>
     <DisplayName>DefaultInstanceBrowseName</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=135</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:SoftwareLoadingType</BrowseName>
     <DisplayName>SoftwareLoadingType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=136</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:UpdateKey</BrowseName>
     <DisplayName>UpdateKey</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=137</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:PackageLoadingType</BrowseName>
     <DisplayName>PackageLoadingType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=139</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:CurrentVersion</BrowseName>
     <DisplayName>CurrentVersion</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=345</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=346</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=347</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=140</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:FileTransfer</BrowseName>
     <DisplayName>FileTransfer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=141</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>ClientProcessingTimeout</BrowseName>
     <DisplayName>ClientProcessingTimeout</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=142</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>GenerateFileForRead</BrowseName>
     <DisplayName>GenerateFileForRead</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=143</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=144</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=145</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>GenerateFileForWrite</BrowseName>
     <DisplayName>GenerateFileForWrite</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=146</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=147</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=148</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>CloseAndCommit</BrowseName>
     <DisplayName>CloseAndCommit</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=149</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=150</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=151</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ErrorMessage</BrowseName>
     <DisplayName>ErrorMessage</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=152</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:WriteBlockSize</BrowseName>
     <DisplayName>WriteBlockSize</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=153</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:DirectLoadingType</BrowseName>
     <DisplayName>DirectLoadingType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=169</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:UpdateBehavior</BrowseName>
     <DisplayName>UpdateBehavior</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=170</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:WriteTimeout</BrowseName>
     <DisplayName>WriteTimeout</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=171</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:CachedLoadingType</BrowseName>
     <DisplayName>CachedLoadingType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=187</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PendingVersion</BrowseName>
     <DisplayName>PendingVersion</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=366</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=367</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=368</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=188</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:FallbackVersion</BrowseName>
     <DisplayName>FallbackVersion</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=373</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=374</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=375</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=189</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:GetUpdateBehavior</BrowseName>
     <DisplayName>GetUpdateBehavior</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=190</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=191</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=192</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:FileSystemLoadingType</BrowseName>
     <DisplayName>FileSystemLoadingType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=194</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>FileSystem</BrowseName>
     <DisplayName>FileSystem</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=195</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>CreateDirectory</BrowseName>
     <DisplayName>CreateDirectory</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=196</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=197</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=198</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>CreateFile</BrowseName>
     <DisplayName>CreateFile</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=199</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=200</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=201</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>Delete</BrowseName>
     <DisplayName>Delete</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=202</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=203</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>MoveOrCopy</BrowseName>
     <DisplayName>MoveOrCopy</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=204</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=205</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=206</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:GetUpdateBehavior</BrowseName>
     <DisplayName>GetUpdateBehavior</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=207</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=208</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=209</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:ValidateFiles</BrowseName>
     <DisplayName>ValidateFiles</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=210</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=211</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OutputArguments</BrowseName>
     <DisplayName>OutputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=212</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:SoftwareVersionType</BrowseName>
     <DisplayName>SoftwareVersionType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=380</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Manufacturer</BrowseName>
     <DisplayName>Manufacturer</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=381</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ManufacturerUri</BrowseName>
     <DisplayName>ManufacturerUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=382</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:SoftwareRevision</BrowseName>
     <DisplayName>SoftwareRevision</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=383</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:PatchIdentifiers</BrowseName>
     <DisplayName>PatchIdentifiers</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=384</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ReleaseDate</BrowseName>
     <DisplayName>ReleaseDate</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=385</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ChangeLogReference</BrowseName>
     <DisplayName>ChangeLogReference</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=386</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Hash</BrowseName>
     <DisplayName>Hash</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=213</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:PrepareForUpdateStateMachineType</BrowseName>
     <DisplayName>PrepareForUpdateStateMachineType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=227</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:PercentComplete</BrowseName>
     <DisplayName>PercentComplete</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=228</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Prepare</BrowseName>
     <DisplayName>Prepare</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=229</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Abort</BrowseName>
     <DisplayName>Abort</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=230</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Resume</BrowseName>
     <DisplayName>Resume</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=231</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Idle</BrowseName>
     <DisplayName>Idle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=232</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=233</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Preparing</BrowseName>
     <DisplayName>Preparing</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=234</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=235</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PreparedForUpdate</BrowseName>
     <DisplayName>PreparedForUpdate</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=236</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=237</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Resuming</BrowseName>
     <DisplayName>Resuming</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=238</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=239</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:IdleToPreparing</BrowseName>
     <DisplayName>IdleToPreparing</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=240</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=241</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PreparingToIdle</BrowseName>
     <DisplayName>PreparingToIdle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=242</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=243</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PreparingToPreparedForUpdate</BrowseName>
     <DisplayName>PreparingToPreparedForUpdate</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=244</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=245</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:PreparedForUpdateToResuming</BrowseName>
     <DisplayName>PreparedForUpdateToResuming</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=246</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=247</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ResumingToIdle</BrowseName>
     <DisplayName>ResumingToIdle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=248</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=249</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:InstallationStateMachineType</BrowseName>
     <DisplayName>InstallationStateMachineType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=263</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:PercentComplete</BrowseName>
     <DisplayName>PercentComplete</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=264</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:InstallationDelay</BrowseName>
     <DisplayName>InstallationDelay</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=265</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:InstallSoftwarePackage</BrowseName>
     <DisplayName>InstallSoftwarePackage</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=266</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=268</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:InstallFiles</BrowseName>
     <DisplayName>InstallFiles</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=269</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>InputArguments</BrowseName>
     <DisplayName>InputArguments</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=270</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Resume</BrowseName>
     <DisplayName>Resume</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=271</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Idle</BrowseName>
     <DisplayName>Idle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=272</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=273</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Installing</BrowseName>
     <DisplayName>Installing</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=274</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=275</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:Error</BrowseName>
     <DisplayName>Error</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=276</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=277</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:IdleToInstalling</BrowseName>
     <DisplayName>IdleToInstalling</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=387</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=279</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:InstallingToIdle</BrowseName>
     <DisplayName>InstallingToIdle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=280</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=281</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:InstallingToError</BrowseName>
     <DisplayName>InstallingToError</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=282</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=283</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:ErrorToIdle</BrowseName>
     <DisplayName>ErrorToIdle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=284</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=285</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:PowerCycleStateMachineType</BrowseName>
     <DisplayName>PowerCycleStateMachineType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=299</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NotWaitingForPowerCycle</BrowseName>
     <DisplayName>NotWaitingForPowerCycle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=300</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=301</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:WaitingForPowerCycle</BrowseName>
     <DisplayName>WaitingForPowerCycle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=302</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=303</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NotWaitingForPowerCycleToWaitingForPowerCycle</BrowseName>
     <DisplayName>NotWaitingForPowerCycleToWaitingForPowerCycle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=304</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=305</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:WaitingForPowerCycleToNotWaitingForPowerCycle</BrowseName>
     <DisplayName>WaitingForPowerCycleToNotWaitingForPowerCycle</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=306</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=307</NodeId>
     <NodeClass>UAObjectType</NodeClass>
     <BrowseName>1:ConfirmationStateMachineType</BrowseName>
     <DisplayName>ConfirmationStateMachineType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=321</NodeId>
     <NodeClass>UAMethod</NodeClass>
     <BrowseName>1:Confirm</BrowseName>
     <DisplayName>Confirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=322</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ConfirmationTimeout</BrowseName>
     <DisplayName>ConfirmationTimeout</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=323</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NotWaitingForConfirm</BrowseName>
     <DisplayName>NotWaitingForConfirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=324</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=325</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:WaitingForConfirm</BrowseName>
     <DisplayName>WaitingForConfirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=326</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>StateNumber</BrowseName>
     <DisplayName>StateNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=327</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:NotWaitingForConfirmToWaitingForConfirm</BrowseName>
     <DisplayName>NotWaitingForConfirmToWaitingForConfirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=328</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=329</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>1:WaitingForConfirmToNotWaitingForConfirm</BrowseName>
     <DisplayName>WaitingForConfirmToNotWaitingForConfirm</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=330</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>TransitionNumber</BrowseName>
     <DisplayName>TransitionNumber</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=331</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:SoftwareVersionFileType</BrowseName>
     <DisplayName>SoftwareVersionFileType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=332</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>EnumStrings</BrowseName>
     <DisplayName>EnumStrings</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=333</NodeId>
     <NodeClass>UADataType</NodeClass>
     <BrowseName>1:UpdateBehavior</BrowseName>
     <DisplayName>UpdateBehavior</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=388</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>OptionSetValues</BrowseName>
     <DisplayName>OptionSetValues</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6551</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default Binary</BrowseName>
     <DisplayName>Default Binary</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15891</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default Binary</BrowseName>
     <DisplayName>Default Binary</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15892</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default Binary</BrowseName>
     <DisplayName>Default Binary</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6554</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default Binary</BrowseName>
     <DisplayName>Default Binary</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6435</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Opc.Ua.Di</BrowseName>
     <DisplayName>Opc.Ua.Di</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6437</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>NamespaceUri</BrowseName>
     <DisplayName>NamespaceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15893</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Deprecated</BrowseName>
     <DisplayName>Deprecated</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6555</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:FetchResultDataType</BrowseName>
     <DisplayName>FetchResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15894</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:TransferResultErrorDataType</BrowseName>
     <DisplayName>TransferResultErrorDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15897</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:TransferResultDataDataType</BrowseName>
     <DisplayName>TransferResultDataDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6564</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ParameterResultDataType</BrowseName>
     <DisplayName>ParameterResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6535</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default XML</BrowseName>
     <DisplayName>Default XML</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15900</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default XML</BrowseName>
     <DisplayName>Default XML</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15901</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default XML</BrowseName>
     <DisplayName>Default XML</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6538</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default XML</BrowseName>
     <DisplayName>Default XML</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6423</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:Opc.Ua.Di</BrowseName>
     <DisplayName>Opc.Ua.Di</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6425</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>NamespaceUri</BrowseName>
     <DisplayName>NamespaceUri</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15902</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>Deprecated</BrowseName>
     <DisplayName>Deprecated</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6539</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:FetchResultDataType</BrowseName>
     <DisplayName>FetchResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15903</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:TransferResultErrorDataType</BrowseName>
     <DisplayName>TransferResultErrorDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15906</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:TransferResultDataDataType</BrowseName>
     <DisplayName>TransferResultDataDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=6548</NodeId>
     <NodeClass>UAVariable</NodeClass>
     <BrowseName>1:ParameterResultDataType</BrowseName>
     <DisplayName>ParameterResultDataType</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15909</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default JSON</BrowseName>
     <DisplayName>Default JSON</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15910</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default JSON</BrowseName>
     <DisplayName>Default JSON</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15911</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default JSON</BrowseName>
     <DisplayName>Default JSON</DisplayName>
   </Node>
-  <Node xmlns="">
+  <Node>
     <NodeId>ns=1;i=15912</NodeId>
     <NodeClass>UAObject</NodeClass>
     <BrowseName>Default JSON</BrowseName>
     <DisplayName>Default JSON</DisplayName>
   </Node>
-</UANodeSet>
+</ArrayOfNode>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<UANodeSet>
+<ArrayOfNode>
   <Node>
     <NodeId>ns=1;i=15001</NodeId>
     <NodeClass>UAObject</NodeClass>
@@ -2292,4 +2292,4 @@
     <BrowseName>Default JSON</BrowseName>
     <DisplayName>Default JSON</DisplayName>
   </Node>
-</UANodeSet>
+</ArrayOfNode>

@@ -10,6 +10,8 @@ namespace TestAlephDigitalOPCWebApi
 {
     public static class Utilities
     {
+        #region Methods ApplicationControleer for requests Application/item/{id} for full node in native xml format
+
         /// <summary>
         /// Retrieve XElement by NodeId
         /// </summary>
@@ -46,6 +48,9 @@ namespace TestAlephDigitalOPCWebApi
 
             return doc;
         }
+        #endregion
+
+        #region Method Application controller for requests Application/query for retrieve all "node" with the minimum set of info in json format 
 
         /// <summary>
         /// Converts Xml to Json
@@ -98,7 +103,7 @@ namespace TestAlephDigitalOPCWebApi
 
                 node.AddFirst(new XElement("NodeClass", node.Name.LocalName));
 
-                var attributeNodeId = node.Attributes().FirstOrDefault(x => x.Name == "NodeId"); 
+                var attributeNodeId = node.Attributes().FirstOrDefault(x => x.Name == "NodeId");
                 if (attributeNodeId != null)
                     node.AddFirst(new XElement(attributeNodeId.Name.LocalName, attributeNodeId.Value));
 
@@ -110,10 +115,46 @@ namespace TestAlephDigitalOPCWebApi
 
             XDocument doc = new XDocument(
                 new XDeclaration("1.0", "utf-8", "yes"),
-                new XElement("UANodeSet", nodes)
+                new XElement("ArrayOfNode", nodes)
                 );
 
             doc.Save("Data/allNodesForJson.xml");
+
+
+            XNamespace xsiNs = "http://www.w3.org/2001/XMLSchema-instance";
+
+            XDocument docForDeserialization = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XElement("ArrayOfNode", new XAttribute(XNamespace.Xmlns + "xsi", xsiNs), nodes)
+                );
+
+            docForDeserialization.Save("Data/allNodesForJsonForDeserialization.xml");
+
+            var nodesFromXml = DeserializeFromXML();
+
+
         }
+        #endregion
+
+        public static List<Node> FilterByNodeClass(string NodeClass)
+        {
+            var nodesFromXml = DeserializeFromXML();
+
+            var result = nodesFromXml;
+
+            return result;
+        }
+
+        public static List<Node> DeserializeFromXML()
+        {
+            XmlSerializer deserializer = new XmlSerializer(typeof(List<Node>));
+            TextReader textReader = new StreamReader("Data/allNodesForJsonForDeserialization.xml");
+            List<Node> nodes = new List<Node>();
+            nodes = (List<Node>)deserializer.Deserialize(textReader);
+            textReader.Close();
+
+            return nodes;
+        }
+
     }
 }
