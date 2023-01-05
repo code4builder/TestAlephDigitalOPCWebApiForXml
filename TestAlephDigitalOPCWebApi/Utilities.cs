@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
+using System.Reflection;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -136,13 +137,17 @@ namespace TestAlephDigitalOPCWebApi
         }
         #endregion
 
-        public static List<Node> FilterByNodeClass(string NodeClass)
+        #region Methods for filtering the list by the query parameters: by NodeClass and by BrowseName
+        public static List<Node> FilterByNodeClass(string nodeClassValue)
         {
             var nodesFromXml = DeserializeFromXML();
+            return nodesFromXml.Where(node => node.NodeClass == nodeClassValue).ToList();
+        }
 
-            var result = nodesFromXml;
-
-            return result;
+        public static List<Node> FilterByBrowseName(string browseNameValue)
+        {
+            var nodesFromXml = DeserializeFromXML();
+            return nodesFromXml.Where(node => node.BrowseName == browseNameValue).ToList();
         }
 
         public static List<Node> DeserializeFromXML()
@@ -155,6 +160,6 @@ namespace TestAlephDigitalOPCWebApi
 
             return nodes;
         }
-
+        #endregion
     }
 }

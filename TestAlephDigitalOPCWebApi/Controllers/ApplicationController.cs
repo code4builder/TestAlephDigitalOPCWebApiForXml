@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Xml;
 using System.Xml.Linq;
 using TestAlephDigitalOPCWebApi;
@@ -13,7 +14,7 @@ namespace TestAlephDigitalOPCWebApi.Controllers
     {
         [HttpGet("item/{id}")]
         // GET: Returns the full "node" in the native xml format. Application/item/{id}
-        public ActionResult GetNodeInXmlById(int id)
+        public IActionResult GetNodeInXmlById(int id)
         {
             var xElement = Utilities.GetXElementById(id);
 
@@ -25,14 +26,28 @@ namespace TestAlephDigitalOPCWebApi.Controllers
         }
 
         [HttpGet("query")]
-        // GET: Returns the full "node" in the native xml format. Application/item/{id}
-        public ActionResult<string> GetAllNodeInJson()
+        // GET: Returns the full "node" in the native xml format. Application/item/{id}.
+        // Also it allows to return a filtered list by the query params: NodeClass and BrowseName
+        public IActionResult GetAllNodeInJson([FromQuery] string? nodeClass, string? browseName)
         {
             Utilities.PrepareXmlMinInfo();
 
-            string jsonString = Utilities.XmlToJson("Data/allNodesForJson.xml");
-
-            return jsonString;
+            if (nodeClass != null)
+            {
+                var listNodesByNodeClass = Utilities.FilterByNodeClass(nodeClass);
+                var jsonListNodesByNodeClass = JsonConvert.SerializeObject(listNodesByNodeClass, Newtonsoft.Json.Formatting.Indented);
+               return Ok(jsonListNodesByNodeClass);
+            }
+            else if (browseName != null)
+            {
+                var listNodesByNodeClass = Utilities.FilterByBrowseName(browseName);
+                var jsonListNodesByNodeClass = JsonConvert.SerializeObject(listNodesByNodeClass, Newtonsoft.Json.Formatting.Indented);
+                return Ok(jsonListNodesByNodeClass);
+            }
+            else
+            {
+                return Ok(Utilities.XmlToJson("Data/allNodesForJson.xml"));
+            }
         }
 
         [HttpGet("test")]
