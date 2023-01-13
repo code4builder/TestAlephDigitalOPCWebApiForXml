@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
+using System.Threading;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Schema;
@@ -18,19 +19,19 @@ namespace TestAlephDigitalOPCWebApi
         /// </summary>
         /// <param name="nodeId">NodeId from OPC Standard Xml file</param>
         /// <returns>XElement</returns>
-        public static XElement GetXElementById(int nodeId)
+        public async static Task<XElement> GetXElementByIdAsync(int nodeId)
         {
-            {
-                XElement xmlElement = XElement.Load("Data/Opc.Ua.Di.NodeSet2.xml");
+            await Task.Delay(0);
 
-                IEnumerable<XElement> nodes = xmlElement.Elements();
+            XElement xmlElement = XElement.Load("Data/Opc.Ua.Di.NodeSet2.xml");
 
-                string completeNodeId = "ns=1;i=" + nodeId.ToString();
+            IEnumerable<XElement> nodes = xmlElement.Elements();
 
-                var xElement = nodes.FirstOrDefault(x => x.Attribute("NodeId")?.Value == completeNodeId.ToString());
+            string completeNodeId = "ns=1;i=" + nodeId.ToString();
 
-                return xElement;
-            }
+            var xElement = nodes.FirstOrDefault(x => x.Attribute("NodeId")?.Value == completeNodeId.ToString());
+
+            return xElement;
         }
 
         /// <summary>
@@ -38,14 +39,15 @@ namespace TestAlephDigitalOPCWebApi
         /// </summary>
         /// <param name="xElement"></param>
         /// <returns>XDocument</returns>
-        public static XDocument CreateNewXDocumentWithNode(XElement xElement)
+        public static XDocument CreateNewXDocumentWithNode(XElement xElement) //Make it Async
         {
-            XDocument doc = new XDocument(
+            var doc = new XDocument(
                 new XDeclaration("1.0", "utf-8", "yes"),
-                new XElement("UANodeSet", xElement)
+                new XElement("UANodeSet", xElement) //UANodeSet -should be const field
                 );
 
-            doc.Save("Data/xmlNode.xml");
+            //Uncomment if you need to save the document
+            //doc.Save(Constants.PathOutputNodeXml);
 
             return doc;
         }
@@ -76,7 +78,7 @@ namespace TestAlephDigitalOPCWebApi
         /// </summary>
         public static void PrepareXmlMinInfo()
         {
-            XElement xmlElement = XElement.Load("Data/Opc.Ua.Di.NodeSet2.xml");
+            XElement xmlElement = XElement.Load(Constants.PathInputXml);
 
             List<XElement> nodes = xmlElement.Elements().ToList();
 
@@ -119,7 +121,7 @@ namespace TestAlephDigitalOPCWebApi
                 new XElement("ArrayOfNode", nodes)
                 );
 
-            doc.Save("Data/allNodesForJson.xml");
+            doc.Save(Constants.PathOutputAllNodesForJson);
 
 
             XNamespace xsiNs = "http://www.w3.org/2001/XMLSchema-instance";
@@ -129,7 +131,7 @@ namespace TestAlephDigitalOPCWebApi
                 new XElement("ArrayOfNode", new XAttribute(XNamespace.Xmlns + "xsi", xsiNs), nodes)
                 );
 
-            docForDeserialization.Save("Data/allNodesForJsonForDeserialization.xml");
+            docForDeserialization.Save(Constants.PathAllNodesForJsonForDeserialization);
 
             var nodesFromXml = DeserializeFromXML();
 
@@ -144,16 +146,22 @@ namespace TestAlephDigitalOPCWebApi
             return nodesFromXml.Where(node => node.NodeClass == nodeClassValue).ToList();
         }
 
+
+        /// <summary>
+        /// Filter by property BrowseName
+        /// </summary>
+        /// <param name="browseNameValue"></param>
+        /// <returns></returns>
         public static List<Node> FilterByBrowseName(string browseNameValue)
         {
             var nodesFromXml = DeserializeFromXML();
             return nodesFromXml.Where(node => node.BrowseName == browseNameValue).ToList();
         }
 
-        public static List<Node> DeserializeFromXML()
+        private static List<Node> DeserializeFromXML()
         {
             XmlSerializer deserializer = new XmlSerializer(typeof(List<Node>));
-            TextReader textReader = new StreamReader("Data/allNodesForJsonForDeserialization.xml");
+            TextReader textReader = new StreamReader(Constants.PathAllNodesForJsonForDeserialization);
             List<Node> nodes = new List<Node>();
             nodes = (List<Node>)deserializer.Deserialize(textReader);
             textReader.Close();

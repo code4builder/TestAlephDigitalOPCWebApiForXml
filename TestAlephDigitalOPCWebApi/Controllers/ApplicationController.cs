@@ -13,10 +13,16 @@ namespace TestAlephDigitalOPCWebApi.Controllers
     public class ApplicationController : ControllerBase
     {
         [HttpGet("item/{id}")]
-        // GET: Returns the full "node" in the native xml format. Application/item/{id}
-        public IActionResult GetNodeInXmlById(int id)
+
+        /// <summary>
+        /// Gets the full "node" by idientifier in the native xml format. Application/item/{id}
+        /// </summary>
+        /// <param name="id">id Xml element</param>
+        /// <returns>Node by Id</returns>
+        public async Task<IActionResult> GetNodeInXmlByIdAsync(int id)
         {
-            var xElement = Utilities.GetXElementById(id);
+            //extract these methods as a class and use it as DI 
+            var xElement = await Utilities.GetXElementByIdAsync(id);
 
             var xDocument = Utilities.CreateNewXDocumentWithNode(xElement);
 
@@ -38,16 +44,15 @@ namespace TestAlephDigitalOPCWebApi.Controllers
                 var jsonListNodesByNodeClass = JsonConvert.SerializeObject(listNodesByNodeClass, Newtonsoft.Json.Formatting.Indented);
                return Ok(jsonListNodesByNodeClass);
             }
-            else if (browseName != null)
+
+            if (browseName != null)
             {
                 var listNodesByNodeClass = Utilities.FilterByBrowseName(browseName);
                 var jsonListNodesByNodeClass = JsonConvert.SerializeObject(listNodesByNodeClass, Newtonsoft.Json.Formatting.Indented);
                 return Ok(jsonListNodesByNodeClass);
             }
-            else
-            {
-                return Ok(Utilities.XmlToJson("Data/allNodesForJson.xml"));
-            }
+            
+            return Ok(Utilities.XmlToJson(Constants.PathOutputAllNodesForJson));
         }
 
         [HttpGet("test")]
